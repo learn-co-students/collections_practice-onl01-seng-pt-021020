@@ -17,6 +17,11 @@ def swap_elements(array)
   array
 end
 
+def swap_elements_from_to(array, index, destination_index)
+  array[index], array[destination_index] = array[destination_index], array[index]
+  array
+end
+
 def reverse_array(array)
   array.reverse
 end
@@ -35,13 +40,23 @@ def find_a(array)
 end
 
 def sum_array(array)
-  array.sum
+  # array.sum  # first solution
+  array.inject do |total, n|  # advanced solution
+    total + n
+  end
 end
 
 def add_s(array)
-  array[0] << "s"
-  (2..(array.length - 1)).each do |i|
-    array[i] << "s"
+  # array[0] << "s"  # first solution
+  # (2..(array.length - 1)).each do |i|
+    # array[i] << "s"
+  # end
+  # array
+  array.each_with_index.collect do |word, i|  # advanced solution
+    if i != 1
+      word << "s"
+    else
+      word
+    end
   end
-  array
 end
