@@ -33,5 +33,5 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.detect{|sting| sting.start_with"a"}
+  array.detect{|sting| sting.start_with?("a")}
 end
