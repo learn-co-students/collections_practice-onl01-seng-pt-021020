@@ -21,3 +21,5 @@ def reverse_array(integer)
   new_arr = integer.reverse
   new_arr
 end
+
+def kesha_maker()
