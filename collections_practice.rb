@@ -4,4 +4,5 @@ def sort_array_asc(arr)
   end
 end 
 
-def 
+def sort_array_desc(arr)
+  arr.sort
