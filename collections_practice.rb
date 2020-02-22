@@ -36,6 +36,7 @@ def find_a(array)
   array.select{|sting| sting.start_with?("a")}
 end
 
-def sum_array(array)
-  
+def sum_array(integers)
+  integers.inject{|sum, n| sum + n}
+end
   
