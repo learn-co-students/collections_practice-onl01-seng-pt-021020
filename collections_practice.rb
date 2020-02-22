@@ -18,4 +18,6 @@ array
 end
 
 def reverse_array(integer)
-  integer.sort {|
+  new_arr = integer.reverse
+  new_arr
+end
