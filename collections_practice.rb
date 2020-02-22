@@ -5,5 +5,6 @@ def sort_array_asc(arr)
 end 
 
 def sort_array_desc(arr)
-  arr.sort
+  arr.sort {|first_num, second_num|} first_num <=> second_num
+end
 end
