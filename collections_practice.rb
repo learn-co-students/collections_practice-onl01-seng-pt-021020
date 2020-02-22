@@ -4,6 +4,6 @@ def sort_array_asc(arr)
   end
 end 
 
-enddef sort_array_desc(arr)
+def sort_array_desc(arr)
   arr.sort {|left, right| left.length <=> right.length}
-
+end
