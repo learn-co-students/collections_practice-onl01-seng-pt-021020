@@ -6,3 +6,4 @@ end
 
 def sort_array_desc(arr)
   arr.sort
+end
